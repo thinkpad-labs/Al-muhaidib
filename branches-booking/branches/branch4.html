@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>صفحة استشارة مخصصة</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Cairo", sans-serif;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background-color: #f4f7f6;
+      }
+      .animated-gradient-bg {
+        /* Dark Blue (#0A3246), Dark Magenta (#3C1432), Mid Blue (#1A4C6A) */
+        background: linear-gradient(-45deg, #0a3246, #3c1432, #1a4c6a, #0a3246);
+        background-size: 400% 400%;
+        animation: gradient-animation 15s ease infinite; /* 15 seconds duration */
+      }
+
+      @keyframes gradient-animation {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 text-gray-800 animated-gradient-bg">
+    <a
+      href="../index.html"
+      class="absolute top-4 right-4 bg-transparent border-2 border-teal-500 text-teal-500 hover:bg-teal-500 hover:text-white font-bold py-2 px-4 rounded-lg transition duration-300 shadow-md z-10"
+    >
+      <span aria-hidden="true">&rarr;</span> رجوع
+    </a>
+
+    <div class="flex-grow flex justify-center items-center py-10">
+      <div
+        class="container flex max-w-5xl mx-4 bg-white rounded-xl shadow-2xl overflow-hidden"
+      >
+        <div
+          class="hidden md:flex w-1/2 justify-center items-center p-10 bg-cyan-50 text-cyan-700"
+        >
+          <h1 class="text-4xl font-extrabold leading-snug">
+            احجز استشارتك <span class="text-teal-600">المجانية</span> الآن
+          </h1>
+        </div>
+
+        <div class="w-full md:w-1/2 p-8 lg:p-12">
+          <h2 class="text-3xl font-bold text-teal-600 text-center mb-8">
+            استشارة مجانية
+          </h2>
+
+          <form id="submissionForm">
+            <div class="flex gap-4 mb-4 flex-wrap md:flex-nowrap">
+              <div class="w-full">
+                <label
+                  for="name"
+                  class="block text-sm font-medium text-gray-700 mb-1"
+                  >الاسم <span class="text-red-500">*</span></label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="اكتب اسمك"
+                  required
+                  class="w-full p-3 border border-gray-300 rounded-lg focus:ring-teal-500 focus:border-teal-500"
+                />
+              </div>
+              <div class="w-full">
+                <label
+                  for="phone"
+                  class="block text-sm font-medium text-gray-700 mb-1"
+                  >رقم الهاتف <span class="text-red-500">*</span></label
+                >
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="05xxxxxxxxx"
+                  required
+                  class="w-full p-3 border border-gray-300 rounded-lg focus:ring-teal-500 focus:border-teal-500"
+                />
+              </div>
+            </div>
+
+            <div class="flex gap-4 mb-4 flex-wrap md:flex-nowrap">
+              <div class="w-full">
+                <label
+                  for="service"
+                  class="block text-sm font-medium text-gray-700 mb-1"
+                  >اختر الخدمة المطلوبة
+                  <span class="text-red-500">*</span></label
+                >
+                <select
+                  id="service"
+                  name="service"
+                  required
+                  class="w-full p-3 border border-gray-300 rounded-lg focus:ring-teal-500 focus:border-teal-500 appearance-none bg-white"
+                >
+                  <option value="" disabled selected>اختر الخدمة</option>
+                  <option value="service1">خدمة 1</option>
+                  <option value="service2">خدمة 2</option>
+                </select>
+              </div>
+              <div class="w-full">
+                <label
+                  for="branch"
+                  class="block text-sm font-medium text-gray-700 mb-1"
+                  >اختر الفرع الأقرب <span class="text-red-500">*</span></label
+                >
+                <select
+                  id="branch"
+                  name="branch"
+                  required
+                  class="w-full p-3 border border-gray-300 rounded-lg focus:ring-teal-500 focus:border-teal-500 appearance-none bg-white"
+                >
+                  <option value="" disabled selected>اختر الفرع</option>
+                  <option value="branch1">فرع الرياض</option>
+                  <option value="branch2">فرع جدة</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="mb-6">
+              <label
+                for="notes"
+                class="block text-sm font-medium text-gray-700 mb-1"
+                >ملاحظات إضافية</label
+              >
+              <textarea
+                id="notes"
+                name="notes"
+                placeholder="اكتب أي ملاحظات أو استفسارات إضافية..."
+                class="w-full p-3 border border-gray-300 rounded-lg focus:ring-teal-500 focus:border-teal-500 min-h-[100px]"
+              ></textarea>
+            </div>
+
+            <button
+              id="submissionButton"
+              type="submit"
+              class="w-full py-4 bg-teal-500 text-white font-bold text-lg rounded-lg hover:bg-teal-600 transition duration-300 shadow-lg shadow-teal-500/50"
+            >
+              احجز موعدك الآن
+            </button>
+          </form>
+
+          <div
+            class="flex justify-around items-center text-center mt-6 pt-4 border-t border-gray-100"
+          >
+            <div class="text-gray-500 text-xs">
+              بيانات محمية<br /><span class="font-semibold text-gray-600"
+                >SSL معتمد</span
+              >
+            </div>
+            <div class="text-gray-500 text-xs">
+              رد سريع<br /><span class="font-semibold text-gray-600"
+                >خلال 30 دقيقة</span
+              >
+            </div>
+            <div class="text-gray-500 text-xs">
+              خصوصية مضمونة<br /><span class="font-semibold text-gray-600"
+                >100% أمان</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="border-t border-gray-200 py-6 text-center">
+      <p class="text-gray-400 text-sm">
+        &copy; 2026 Al-Muhaidib Clinics. All rights reserved
+      </p>
+    </footer>
+    <script>
+      const form = document.getElementById("submissionForm");
+      const button = document.getElementById("submissionButton");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const formData = new FormData(form);
+        const formContent = Object.fromEntries(formData.entries());
+        const payload = {
+          الورقة1: { ...formContent },
+        };
+        console.log(payload);
+        fetch(
+          "https://api.sheety.co/6d03a1bcd3df271931d1aae87cd0dcec/devTest/الورقة1",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(payload),
+          }
+        )
+          .then((response) => response.json())
+          .then((json) => {
+            console.log(json);
+          });
+      });
+    </script>
+  </body>
+</html>
