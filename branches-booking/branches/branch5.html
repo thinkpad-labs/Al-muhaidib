@@ -54,13 +54,13 @@
           class="hidden md:flex w-1/2 justify-center items-center p-10 bg-cyan-50 text-cyan-700"
         >
           <h1 class="text-4xl font-extrabold leading-snug">
-            احجز استشارتك <span class="text-teal-600">المجانية</span> الآن
+            احجز خدمتك معنا <span class="text-teal-600">الآن</span>
           </h1>
         </div>
 
         <div class="w-full md:w-1/2 p-8 lg:p-12">
-          <h2 class="text-3xl font-bold text-teal-600 text-center mb-8">
-            استشارة مجانية
+          <h2 class="text-4xl font-bold text-teal-600 text-center mb-8">
+            احجز خدمتك
           </h2>
 
           <form id="submissionForm">
@@ -98,13 +98,13 @@
             </div>
 
             <div class="flex gap-4 mb-4 flex-wrap md:flex-nowrap">
-              <div class="w-full">
+              <div class="w-full md:w-1/3">
                 <label
                   for="service"
                   class="block text-sm font-medium text-gray-700 mb-1"
-                  >اختر الخدمة المطلوبة
-                  <span class="text-red-500">*</span></label
                 >
+                  اختر الخدمة <span class="text-red-500">*</span>
+                </label>
                 <select
                   id="service"
                   name="service"
@@ -112,16 +112,34 @@
                   class="w-full p-3 border border-gray-300 rounded-lg focus:ring-teal-500 focus:border-teal-500 appearance-none bg-white"
                 >
                   <option value="" disabled selected>اختر الخدمة</option>
-                  <option value="service1">خدمة 1</option>
-                  <option value="service2">خدمة 2</option>
+                  <option value="زراعة (شاملة التركيبة)">
+                    زراعة (شاملة التركيبة)
+                  </option>
+                  <option value="زراعة (غير شاملة التركيبة)">
+                    زراعة (غير شاملة التركيبة)
+                  </option>
+                  <option value="تقويم (كاش)">تقويم (كاش)</option>
+                  <option value="تقويم (دفعات)">تقويم (دفعات)</option>
+                  <option value="تقويم شفاف">تقويم شفاف</option>
+                  <option value="تركيبة زيركون">تركيبة زيركون</option>
+                  <option value="تنظيف + تبييض + تلميع">
+                    تنظيف + تبييض + تلميع
+                  </option>
+                  <option value="خلع جراحي (عملية)">خلع جراحي (عملية)</option>
+                  <option value="خلع جراحي (عادي)">خلع جراحي (عادي)</option>
+                  <option value="ابتسامة هوليوود">ابتسامة هوليوود</option>
+                  <option value="حشو العصب">حشو العصب</option>
+                  <option value="الحشوات">الحشوات</option>
                 </select>
               </div>
-              <div class="w-full">
+
+              <div class="w-full md:w-1/3">
                 <label
                   for="branch"
                   class="block text-sm font-medium text-gray-700 mb-1"
-                  >اختر الفرع الأقرب <span class="text-red-500">*</span></label
                 >
+                  اختر الفرع <span class="text-red-500">*</span>
+                </label>
                 <select
                   id="branch"
                   name="branch"
@@ -129,8 +147,39 @@
                   class="w-full p-3 border border-gray-300 rounded-lg focus:ring-teal-500 focus:border-teal-500 appearance-none bg-white"
                 >
                   <option value="" disabled selected>اختر الفرع</option>
-                  <option value="branch1">فرع الرياض</option>
-                  <option value="branch2">فرع جدة</option>
+                  <option value="فرع الهجرة">فرع الهجرة</option>
+                  <option value="فرع العزيزية أمام البخاري">
+                    فرع العزيزية أمام البخاري
+                  </option>
+                  <option value="فرع التحلية">فرع التحلية</option>
+                  <option value="فرع الممشى">فرع الممشى</option>
+                  <option value="فرع الدائري">فرع الدائري</option>
+                </select>
+              </div>
+
+              <div class="w-full md:w-1/3">
+                <label
+                  for="time"
+                  class="block text-sm font-medium text-gray-700 mb-1"
+                >
+                  الوقت المفضل <span class="text-red-500">*</span>
+                </label>
+                <select
+                  id="time"
+                  name="time"
+                  required
+                  class="w-full p-3 border border-gray-300 rounded-lg focus:ring-teal-500 focus:border-teal-500 appearance-none bg-white"
+                >
+                  <option value="" disabled selected>اختر الوقت</option>
+                  <option value="صباحاً (9:00 - 12:00)">
+                    صباحاً (9:00 - 12:00)
+                  </option>
+                  <option value="ظهراً (12:00 - 4:00)">
+                    ظهراً (12:00 - 4:00)
+                  </option>
+                  <option value="مساءً (4:00 - 9:00)">
+                    مساءً (4:00 - 9:00)
+                  </option>
                 </select>
               </div>
             </div>

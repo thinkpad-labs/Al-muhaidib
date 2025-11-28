@@ -45,6 +45,9 @@
           background-position: 0% 50%;
         }
       }
+      .white-logo {
+        filter: brightness(0) invert(1);
+      }
     </style>
 
     <script>
@@ -64,12 +67,10 @@
     <main
       class="flex-grow container mx-auto px-4 py-16 flex flex-col items-center justify-center"
     >
-      <header class="text-center mb-16 animate-fade-in-down">
-        <p
-          class="text-accent font-semibold tracking-widest uppercase text-sm mb-2"
-        >
-          Group
-        </p>
+      <header
+        class="text-center mb-16 animate-fade-in-down flex flex-col items-center"
+      >
+        <img src="muhaidib.svg" alt="logo" class="w-40 mb-3 white-logo" />
         <h1
           class="text-5xl md:text-7xl font-extrabold text-white tracking-tight mb-4 font-sans"
         >
@@ -80,7 +81,7 @@
           AL-MADINA
         </h1>
         <p class="text-gray-300 text-lg max-w-2xl mx-auto">
-          لعيادات الفم و الأسنان و عيادات الجلدية
+          لطب و تقويم الاسنان و عيادات الجلدية
         </p>
       </header>
 
@@ -112,7 +113,7 @@
             class="w-16 h-16 bg-orange-50 rounded-full flex items-center justify-center mb-6 group-hover:bg-orange-500 transition-colors duration-300"
           >
             <i
-              class="fa-solid fa-stethoscope text-2xl text-orange-600 group-hover:text-white transition-colors"
+              class="fa-solid fa-tooth text-2xl text-orange-600 group-hover:text-white transition-colors"
             ></i>
           </div>
           <h2 class="text-xl font-bold text-gray-800 mb-2">
@@ -133,7 +134,7 @@
             class="w-16 h-16 bg-green-50 rounded-full flex items-center justify-center mb-6 group-hover:bg-green-500 transition-colors duration-300"
           >
             <i
-              class="fa-solid fa-spa text-2xl text-green-600 group-hover:text-white transition-colors"
+              class="fa-solid fa-tooth text-2xl text-green-600 group-hover:text-white transition-colors"
             ></i>
           </div>
           <h2 class="text-xl font-bold text-gray-800 mb-2">فرع التحليه</h2>
@@ -152,7 +153,7 @@
             class="w-16 h-16 bg-red-50 rounded-full flex items-center justify-center mb-6 group-hover:bg-red-500 transition-colors duration-300"
           >
             <i
-              class="fa-solid fa-clipboard-check text-2xl text-red-600 group-hover:text-white transition-colors"
+              class="fa-solid fa-tooth text-2xl text-red-600 group-hover:text-white transition-colors"
             ></i>
           </div>
           <h2 class="text-xl font-bold text-gray-800 mb-2">فرع الممشى</h2>
@@ -171,7 +172,7 @@
             class="w-16 h-16 bg-purple-50 rounded-full flex items-center justify-center mb-6 group-hover:bg-purple-500 transition-colors duration-300"
           >
             <i
-              class="fa-solid fa-user-doctor text-2xl text-purple-600 group-hover:text-white transition-colors"
+              class="fa-solid fa-tooth text-2xl text-purple-600 group-hover:text-white transition-colors"
             ></i>
           </div>
           <h2 class="text-xl font-bold text-gray-800 mb-2">فرع الدائري</h2>
