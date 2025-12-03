@@ -139,6 +139,7 @@
         ttq.page();
       })(window, document, "ttq");
     </script>
+
     <!-- Google tag (gtag.js) -->
     <script
       async
@@ -150,8 +151,15 @@
         dataLayer.push(arguments);
       }
       gtag("js", new Date());
-
       gtag("config", "AW-17766311386");
+    </script>
+
+    <!-- Event snippet for عملية شراء conversion page -->
+    <script>
+      gtag("event", "conversion", {
+        send_to: "AW-17766311386/O4JeCNzmmssbENrL0ZdC",
+        transaction_id: "",
+      });
     </script>
   </head>
   <body class="min-h-screen text-white flex flex-col animated-gradient-bg">
