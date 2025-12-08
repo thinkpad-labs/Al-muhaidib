@@ -206,6 +206,13 @@
               احجز موعدك الآن
             </button>
           </form>
+          <div
+            id="successMessage"
+            class="hidden mt-6 text-center p-4 rounded-lg border border-teal-500 bg-teal-50 text-teal-700 font-bold text-lg shadow-md"
+          >
+            تم ارسال حجزك الاولي و ستصلك رسالة تأكيد ... شكرا لكم لاختياركم
+            عيادات المهيدب بالمدينه المنوره
+          </div>
 
           <div
             class="flex justify-around items-center text-center mt-6 pt-4 border-t border-gray-100"
@@ -238,15 +245,23 @@
     <script>
       const form = document.getElementById("submissionForm");
       const button = document.getElementById("submissionButton");
+      const successMessage = document.getElementById("successMessage");
 
       form.addEventListener("submit", (e) => {
         e.preventDefault();
+
+        // Disable button while sending
+        button.disabled = true;
+        button.textContent = "جاري الإرسال...";
+        button.classList.add("opacity-60", "cursor-not-allowed");
+
         const formData = new FormData(form);
         const formContent = Object.fromEntries(formData.entries());
+
         const payload = {
           الورقة1: { ...formContent },
         };
-        console.log(payload);
+
         fetch(
           "https://api.sheety.co/6d03a1bcd3df271931d1aae87cd0dcec/devTest/الورقة1",
           {
@@ -260,6 +275,30 @@
           .then((response) => response.json())
           .then((json) => {
             console.log(json);
+
+            // Show success message
+            successMessage.classList.remove("hidden");
+
+            // Reset form
+            form.reset();
+
+            // Restore button
+            button.disabled = false;
+            button.textContent = "احجز موعدك الآن";
+            button.classList.remove("opacity-60", "cursor-not-allowed");
+
+            // Hide message after 5 seconds
+            setTimeout(() => {
+              successMessage.classList.add("hidden");
+            }, 5000);
+          })
+          .catch((error) => {
+            console.error("Error:", error);
+
+            // Restore button if error occurs
+            button.disabled = false;
+            button.textContent = "احجز موعدك الآن";
+            button.classList.remove("opacity-60", "cursor-not-allowed");
           });
       });
     </script>
