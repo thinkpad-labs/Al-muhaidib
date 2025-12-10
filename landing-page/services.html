@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+
+<html class="light" dir="rtl" lang="ar">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Service Detail Page - Desktop Adjusted</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#137fec",
+              "background-light": "#f6f7f8",
+              "background-dark": "#101922",
+            },
+            fontFamily: {
+              display: ["Manrope", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.5rem",
+              lg: "1rem",
+              xl: "1.5rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+        font-size: 24px;
+      }
+    </style>
+    <style>
+      body {
+        min-height: max(884px, 100dvh);
+      }
+    </style>
+  </head>
+  <body class="font-display bg-background-light dark:bg-background-dark">
+    <div
+      class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden pb-24"
+    >
+      <header
+        class="sticky top-0 z-10 flex h-16 items-center bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm px-4 justify-between w-full"
+      >
+        <div
+          class="w-full lg:max-w-3xl lg:mx-auto flex justify-between items-center"
+        >
+          <a
+            href="./index.html"
+            class="flex size-10 items-center justify-center rounded-full text-slate-700 dark:text-slate-300"
+          >
+            <span class="material-symbols-outlined">arrow_forward</span>
+          </a>
+          <h2 class="text-slate-900 dark:text-white text-lg font-bold">
+            زراعة الأسنان
+          </h2>
+          <div class="flex size-10 items-center justify-center"></div>
+        </div>
+      </header>
+
+      <main class="flex-1 lg:max-w-4xl lg:mx-auto lg:pt-4">
+        <div class="@container">
+          <div class="px-4 lg:px-0">
+            <div
+              class="w-full bg-center bg-no-repeat bg-cover flex flex-col justify-end overflow-hidden rounded-xl min-h-[220px] lg:min-h-[400px] shadow-sm"
+              data-alt="Illustration of a perfect dental implant"
+              style="
+                background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCklqxTc3SiArXQRotlzwLaYcrvVW83Hh2RwJYa6PND9t693aN4JrUxShSSFhUPkg-WcBktEAO65BmRlaAe6dqjRIanAvJWroWCrxtXIpj8NErHWYkXXv4-g5-t6p8z9LZQftkq_lDNdjG8NLrnphQLq-iL2_ZGv25QNaQJzEopvVsS4SHr8EOhxQExpIjK7CQ2Y_NSpZwGbOSJ_1bMhvzbyjyOKC2oluaaKXBJqtku4iLH_goPUvc-HojSzy6ReBgr8aaHLFBYUOo');
+              "
+            ></div>
+          </div>
+        </div>
+
+        <h1
+          class="text-slate-900 dark:text-white tracking-tight text-[32px] font-bold leading-tight px-4 text-right pt-6 pb-2 lg:px-0 lg:text-4xl"
+        >
+          زراعة الأسنان
+        </h1>
+        <div class="px-4 lg:px-0">
+          <div
+            class="bg-white dark:bg-slate-800/50 p-4 lg:p-6 rounded-lg shadow-sm"
+          >
+            <p
+              class="text-slate-600 dark:text-slate-300 text-base font-normal leading-relaxed text-right lg:text-lg"
+            >
+              زراعة الأسنان هي الحل الأمثل والدائم لتعويض الأسنان المفقودة، حيث
+              يتم غرس جذر من التيتانيوم في عظم الفك ليدعم تاجاً صناعياً يشبه
+              السن الطبيعي في الشكل والوظيفة. هذا الإجراء مناسب لمعظم الحالات
+              ويمنحك ابتسامة طبيعية وثقة تدوم طويلاً.
+            </p>
+          </div>
+        </div>
+
+        <h2
+          class="text-slate-900 dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-8 lg:px-0 lg:pt-10"
+        >
+          الفوائد
+        </h2>
+        <div
+          class="flex flex-col gap-3 px-4 lg:px-0 lg:grid lg:grid-cols-3 lg:gap-4"
+        >
+          <div
+            class="bg-white dark:bg-slate-800/50 rounded-lg shadow-sm overflow-hidden"
+          >
+            <button
+              class="w-full flex justify-between items-center p-4 text-right"
+            >
+              <span class="font-bold text-slate-800 dark:text-slate-100"
+                >مظهر طبيعي وجذاب</span
+              >
+              <span
+                class="material-symbols-outlined text-primary transition-transform transform hidden lg:block"
+                >favorite</span
+              >
+            </button>
+          </div>
+          <div
+            class="bg-white dark:bg-slate-800/50 rounded-lg shadow-sm overflow-hidden"
+          >
+            <button
+              class="w-full flex justify-between items-center p-4 text-right"
+            >
+              <span class="font-bold text-slate-800 dark:text-slate-100"
+                >حل دائم ومستقر</span
+              >
+              <span
+                class="material-symbols-outlined text-primary transition-transform transform hidden lg:block"
+                >check_circle</span
+              >
+            </button>
+          </div>
+          <div
+            class="bg-white dark:bg-slate-800/50 rounded-lg shadow-sm overflow-hidden"
+          >
+            <button
+              class="w-full flex justify-between items-center p-4 text-right"
+            >
+              <span class="font-bold text-slate-800 dark:text-slate-100"
+                >تحسين القدرة على المضغ</span
+              >
+              <span
+                class="material-symbols-outlined text-primary transition-transform transform hidden lg:block"
+                >restaurant</span
+              >
+            </button>
+          </div>
+        </div>
+
+        <h2
+          class="text-slate-900 dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-8 lg:px-0 lg:pt-10"
+        >
+          نتائجنا
+        </h2>
+        <div class="relative px-4 lg:px-0">
+          <div class="overflow-hidden rounded-xl shadow-sm">
+            <div class="flex snap-x snap-mandatory overflow-x-auto">
+              <div class="w-full flex-shrink-0 snap-center">
+                <img
+                  alt="Before and after dental implant photo"
+                  class="w-full h-64 lg:h-96 object-cover"
+                  data-alt="Before and after photo of dental implant results"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKcpLu44PShNVgX0cY7G0vG356B8HDjubsdNGjrplkQkZjKWBAwYkMTwZ_DJzW7hncbqvYcc54VM5RRxTBr9JZHKe8dTHOSJyGDbo9-5HnacSE37nvsVO4E94AATW4Uo7HgrdQ24LxqLZq58MSk2rx1PyDh1htGQgqGbXLgrU9rOzdt3l9n9IaoEntLP0AdgifzUE5r3oGSrjcAgDlmYMvnFVF8ZJ29XIJ_fid9DfQphuAVt2uxzI1BA9aLpe3_d2EJ5sHqCjCRjk"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="absolute bottom-3 left-0 right-0 flex justify-center items-center gap-2"
+          ></div>
+        </div>
+
+        <h2
+          class="text-slate-900 dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-8 lg:px-0 lg:pt-10"
+        >
+          الأسئلة الشائعة
+        </h2>
+        <div class="flex flex-col gap-3 px-4 lg:px-0">
+          <div
+            class="bg-white dark:bg-slate-800/50 rounded-lg shadow-sm overflow-hidden"
+          >
+            <details>
+              <summary
+                class="flex justify-between items-center p-4 cursor-pointer text-right list-none"
+              >
+                <span class="font-bold text-slate-800 dark:text-slate-100"
+                  >هل عملية الزراعة مؤلمة؟</span
+                >
+                <span
+                  class="material-symbols-outlined text-primary transition-transform transform duration-300 ease-in-out group-open:rotate-180"
+                  >expand_more</span
+                >
+              </summary>
+              <div class="p-4 pt-0">
+                <p
+                  class="text-slate-600 dark:text-slate-300 text-base font-normal leading-relaxed"
+                >
+                  تتم العملية تحت تخدير موضعي، لذلك لن تشعر بأي ألم. قد يكون
+                  هناك بعض الانزعاج الطفيف بعد العملية والذي يمكن السيطرة عليه
+                  بالمسكنات.
+                </p>
+              </div>
+            </details>
+          </div>
+          <div
+            class="bg-white dark:bg-slate-800/50 rounded-lg shadow-sm overflow-hidden"
+          >
+            <details>
+              <summary
+                class="flex justify-between items-center p-4 cursor-pointer text-right list-none"
+              >
+                <span class="font-bold text-slate-800 dark:text-slate-100"
+                  >كم تستغرق فترة العلاج؟</span
+                >
+                <span
+                  class="material-symbols-outlined text-primary transition-transform transform duration-300 ease-in-out group-open:rotate-180"
+                  >expand_more</span
+                >
+              </summary>
+              <div class="p-4 pt-0">
+                <p
+                  class="text-slate-600 dark:text-slate-300 text-base font-normal leading-relaxed"
+                >
+                  تختلف المدة حسب كل حالة، ولكنها تتراوح عادةً بين عدة أسابيع
+                  إلى بضعة أشهر للسماح للزرعة بالاندماج مع عظم الفك.
+                </p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </main>
+
+      <footer
+        class="fixed bottom-0 left-0 right-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm p-4 border-t border-slate-200 dark:border-slate-800"
+      >
+        <div class="lg:max-w-3xl lg:mx-auto">
+          <a
+            href="./book/branch.html"
+            class="w-full flex items-center justify-center rounded-lg h-12 bg-primary text-white text-base font-bold shadow-lg shadow-primary/30 lg:max-w-xs lg:mr-auto lg:ml-0"
+          >
+            احجز الآن
+          </a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

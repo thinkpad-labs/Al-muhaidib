@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+
+<html class="light" dir="rtl" lang="ar">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>تواصل معنا</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#137fec",
+              "background-light": "#f6f7f8",
+              "background-dark": "#101922",
+            },
+            fontFamily: {
+              display: ["Cairo", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.5rem",
+              lg: "1rem",
+              xl: "1.5rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+      }
+    </style>
+    <style>
+      body {
+        min-height: max(884px, 100dvh);
+      }
+    </style>
+  </head>
+  <body
+    class="bg-background-light dark:bg-background-dark font-display text-[#333333] dark:text-gray-200"
+  >
+    <div
+      class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden max-w-5xl mx-auto"
+    >
+      <!-- Top App Bar -->
+      <div
+        class="flex items-center bg-white dark:bg-background-dark p-4 pb-2 justify-between sticky top-0 z-10 shadow-sm"
+      >
+        <h2
+          class="text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center text-gray-800 dark:text-white"
+        >
+          تواصل معنا
+        </h2>
+        <a
+          href="./index.html"
+          class="text-gray-800 dark:text-white flex size-10 shrink-0 items-center justify-center rounded-full"
+        >
+          <span class="material-symbols-outlined text-2xl">arrow_forward</span>
+        </a>
+      </div>
+      <div class="p-4 space-y-8">
+        <!-- Introductory Text -->
+        <p
+          class="text-base font-normal leading-normal text-gray-600 dark:text-gray-300"
+        >
+          يسعدنا تواصلكم معنا. يمكنكم استخدام أحد الخيارات التالية:
+        </p>
+        <!-- Direct Contact List -->
+        <div class="space-y-3">
+          <a
+            href="tel:+966568288539"
+            class="flex items-center gap-4 bg-white dark:bg-gray-800/50 p-4 rounded-lg shadow-sm justify-between"
+          >
+            <div class="flex items-center gap-4">
+              <div
+                class="text-primary flex items-center justify-center rounded-lg bg-primary/20 shrink-0 size-10"
+              >
+                <span class="material-symbols-outlined">call</span>
+              </div>
+              <p
+                class="text-base font-medium leading-normal flex-1 truncate text-gray-800 dark:text-gray-100"
+              >
+                اتصل بنا
+              </p>
+            </div>
+            <div class="shrink-0">
+              <div
+                class="text-gray-500 dark:text-gray-400 flex size-7 items-center justify-center"
+              >
+                <span class="material-symbols-outlined">chevron_left</span>
+              </div>
+            </div>
+          </a>
+          <a
+            href="mailto:almuhaidb15@gmail.com"
+            class="flex items-center gap-4 bg-white dark:bg-gray-800/50 p-4 rounded-lg shadow-sm justify-between"
+          >
+            <div class="flex items-center gap-4">
+              <div
+                class="text-primary flex items-center justify-center rounded-lg bg-primary/20 shrink-0 size-10"
+              >
+                <span class="material-symbols-outlined">mail</span>
+              </div>
+              <p
+                class="text-base font-medium leading-normal flex-1 truncate text-gray-800 dark:text-gray-100"
+              >
+                راسلنا عبر البريد
+              </p>
+            </div>
+            <div class="shrink-0">
+              <div
+                class="text-gray-500 dark:text-gray-400 flex size-7 items-center justify-center"
+              >
+                <span class="material-symbols-outlined">chevron_left</span>
+              </div>
+            </div>
+          </a>
+          <a
+            href="https://wa.me/966568288539"
+            target="_blank"
+            class="flex items-center gap-4 bg-white dark:bg-gray-800/50 p-4 rounded-lg shadow-sm justify-between"
+          >
+            <div class="flex items-center gap-4">
+              <div
+                class="text-primary flex items-center justify-center rounded-lg bg-primary/20 shrink-0 size-10"
+              >
+                <svg
+                  class="lucide lucide-message-circle"
+                  fill="none"
+                  height="24"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewbox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path>
+                </svg>
+              </div>
+              <p
+                class="text-base font-medium leading-normal flex-1 truncate text-gray-800 dark:text-gray-100"
+              >
+                تواصل عبر واتساب
+              </p>
+            </div>
+            <div class="shrink-0">
+              <div
+                class="text-gray-500 dark:text-gray-400 flex size-7 items-center justify-center"
+              >
+                <span class="material-symbols-outlined">chevron_left</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Contact Form -->
+
+        <!-- ✅ Locations Section -->
+        <div class="space-y-4">
+          <h3 class="text-lg font-bold text-gray-800 dark:text-white">
+            فروعنا
+          </h3>
+
+          <div class="space-y-3" id="branches">
+            <!-- ✅ Branch 1 -->
+            <div
+              class="branch-item bg-white dark:bg-gray-800/50 p-4 rounded-lg shadow-sm cursor-pointer border-2 border-transparent transition"
+              data-map="https://www.google.com/maps?q=24.4591073,39.5863726&z=17&output=embed"
+            >
+              <p class="font-semibold text-gray-800 dark:text-gray-100">
+                فرع الدائري
+              </p>
+            </div>
+          </div>
+          <div class="space-y-3" id="branches">
+            <!-- ✅ Branch 1 -->
+            <div
+              class="branch-item bg-white dark:bg-gray-800/50 p-4 rounded-lg shadow-sm cursor-pointer border-2 border-transparent transition"
+              data-map="https://www.google.com/maps?q=24.4579,39.6113&z=17&output=embed"
+            >
+              <p class="font-semibold text-gray-800 dark:text-gray-100">
+                فرع الهجرة
+              </p>
+            </div>
+          </div>
+          <div class="space-y-3" id="branches">
+            <!-- ✅ Branch 1 -->
+            <div
+              class="branch-item bg-white dark:bg-gray-800/50 p-4 rounded-lg shadow-sm cursor-pointer border-2 border-transparent transition"
+              data-map="https://www.google.com/maps?q=24.4612,39.6105&z=17&output=embed"
+            >
+              <p class="font-semibold text-gray-800 dark:text-gray-100">
+                فرع الممشى
+              </p>
+            </div>
+          </div>
+          <div class="space-y-3" id="branches">
+            <!-- ✅ Branch 1 -->
+            <div
+              class="branch-item bg-white dark:bg-gray-800/50 p-4 rounded-lg shadow-sm cursor-pointer border-2 border-transparent transition"
+              data-map="https://www.google.com/maps?q=24.4489,39.6124&z=17&output=embed"
+            >
+              <p class="font-semibold text-gray-800 dark:text-gray-100">
+                فرع العزيزة - الامام البخاري
+              </p>
+            </div>
+          </div>
+          <div class="space-y-3" id="branches">
+            <!-- ✅ Branch 1 -->
+            <div
+              class="branch-item bg-white dark:bg-gray-800/50 p-4 rounded-lg shadow-sm cursor-pointer border-2 border-transparent transition"
+              data-map="https://www.google.com/maps?q=24.4726,39.6083&z=17&output=embed"
+            >
+              <p class="font-semibold text-gray-800 dark:text-gray-100">
+                فرع ساري
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ✅ Interactive Map Preview -->
+        <div class="mt-4">
+          <div class="aspect-video w-full overflow-hidden rounded-xl shadow-lg">
+            <iframe
+              id="mapPreview"
+              class="h-full w-full"
+              src="https://www.google.com/maps?q=24.4591073,39.5863726&z=17&output=embed"
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const branchItems = document.querySelectorAll(".branch-item");
+      const mapPreview = document.getElementById("mapPreview");
+
+      branchItems.forEach((item, index) => {
+        // ✅ Set first one active by default
+        if (index === 0) {
+          item.classList.add(
+            "border-primary",
+            "bg-blue-50",
+            "dark:bg-gray-700/60"
+          );
+        }
+
+        item.addEventListener("click", () => {
+          // ✅ Remove active style from all
+          branchItems.forEach((branch) => {
+            branch.classList.remove(
+              "border-primary",
+              "bg-blue-50",
+              "dark:bg-gray-700/60"
+            );
+          });
+
+          // ✅ Add active style to clicked
+          item.classList.add(
+            "border-primary",
+            "bg-blue-50",
+            "dark:bg-gray-700/60"
+          );
+
+          // ✅ Update map preview
+          const mapUrl = item.dataset.map;
+          mapPreview.src = mapUrl;
+        });
+      });
+    </script>
+  </body>
+</html>

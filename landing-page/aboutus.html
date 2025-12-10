@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+
+<html class="light" dir="rtl" lang="ar">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>About Us Page - Mobile</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#137fec",
+              "background-light": "#f6f7f8",
+              "background-dark": "#101922",
+              "accent-green": "#046c4e",
+            },
+            fontFamily: {
+              display: ["Cairo", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.5rem",
+              lg: "1rem",
+              xl: "1.5rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+      }
+    </style>
+    <style>
+      body {
+        min-height: max(884px, 100dvh);
+      }
+    </style>
+  </head>
+  <body
+    class="bg-background-light dark:bg-background-dark font-display text-right"
+  >
+    <div
+      class="relative flex h-auto min-h-screen w-full max-w-6xl mx-auto flex-col group/design-root overflow-x-hidden"
+    >
+      <!-- Top App Bar -->
+      <div
+        class="flex items-center bg-background-light dark:bg-background-dark p-4 pb-2 justify-between sticky top-0 z-10"
+      >
+        <a
+          href="./index.html"
+          class="flex size-12 shrink-0 items-center justify-start text-[#111418] dark:text-white"
+        >
+          <span class="material-symbols-outlined text-2xl">arrow_forward</span>
+        </a>
+        <h2
+          class="text-[#111418] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center"
+        >
+          من نحن
+        </h2>
+      </div>
+      <!-- Header Image -->
+      <div class="@container px-4 py-3">
+        <div
+          class="w-full bg-center bg-no-repeat bg-cover flex flex-col justify-end overflow-hidden rounded-xl min-h-[218px]"
+          data-alt="Modern and bright dental clinic reception area"
+          style="background-image: url('placeholder.png')"
+        ></div>
+      </div>
+      <!-- Headline and Body Text -->
+      <h2
+        class="text-[#111418] dark:text-white tracking-light text-[28px] font-bold leading-tight px-4 text-right pb-3 pt-5"
+      >
+        التزامنا برعايتكم
+      </h2>
+      <p
+        class="text-[#111418] dark:text-gray-300 text-base font-normal leading-normal pb-3 pt-1 px-4"
+      >
+        نحن في مجموعة المهيدب لطب الأسنان نلتزم بتقديم أعلى مستويات الرعاية
+        الصحية لأسنانكم، باستخدام أحدث التقنيات وأفضل الخبرات لضمان ابتسامة صحية
+        وجميلة.
+      </p>
+      <!-- Mission and Vision Cards -->
+      <div class="p-4 grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div
+          class="flex flex-col items-stretch justify-start rounded-lg shadow-[0_0_4px_rgba(0,0,0,0.1)] bg-white dark:bg-gray-800"
+        >
+          <div
+            class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-1 p-4"
+          >
+            <p
+              class="text-primary dark:text-blue-400 text-lg font-bold leading-tight tracking-[-0.015em]"
+            >
+              رسالتنا
+            </p>
+            <p
+              class="text-[#617589] dark:text-gray-400 text-base font-normal leading-normal"
+            >
+              تقديم خدمات طب أسنان شاملة ومبتكرة تتجاوز توقعات مرضانا في بيئة
+              مريحة وآمنة.
+            </p>
+          </div>
+        </div>
+        <div
+          class="flex flex-col items-stretch justify-start rounded-lg shadow-[0_0_4px_rgba(0,0,0,0.1)] bg-white dark:bg-gray-800"
+        >
+          <div
+            class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-1 p-4"
+          >
+            <p
+              class="text-primary dark:text-blue-400 text-lg font-bold leading-tight tracking-[-0.015em]"
+            >
+              رؤيتنا
+            </p>
+            <p
+              class="text-[#617589] dark:text-gray-400 text-base font-normal leading-normal"
+            >
+              أن نكون الخيار الأول والأكثر ثقة في مجال طب الأسنان بالمدينة
+              المنورة والمملكة.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Our History Section -->
+      <h2
+        class="text-[#111418] dark:text-white tracking-light text-2xl font-bold leading-tight px-4 text-right pb-3 pt-5"
+      >
+        تاريخنا
+      </h2>
+      <div class="px-4 py-2 md:px-24">
+        <div class="relative pl-8">
+          <!-- Timeline Item -->
+          <div class="flex items-start mb-8">
+            <div
+              class="absolute right-0 top-1.5 h-full w-0.5 bg-gray-200 dark:bg-gray-700"
+            ></div>
+            <div
+              class="absolute right-[-7px] top-1.5 h-4 w-4 rounded-full bg-primary border-4 border-background-light dark:border-background-dark"
+            ></div>
+            <div class="pr-8">
+              <p class="font-bold text-accent-green dark:text-green-400">
+                2010
+              </p>
+              <p
+                class="text-[#111418] dark:text-gray-300 text-base font-normal leading-normal mt-1"
+              >
+                تأسيس أول فرع لمجموعة المهيدب في المدينة المنورة.
+              </p>
+            </div>
+          </div>
+          <!-- Timeline Item -->
+          <div class="flex items-start mb-8">
+            <div
+              class="absolute right-0 top-1.5 h-full w-0.5 bg-gray-200 dark:bg-gray-700"
+            ></div>
+            <div
+              class="absolute right-[-7px] top-1.5 h-4 w-4 rounded-full bg-primary border-4 border-background-light dark:border-background-dark"
+            ></div>
+            <div class="pr-8">
+              <p class="font-bold text-accent-green dark:text-green-400">
+                2015
+              </p>
+              <p
+                class="text-[#111418] dark:text-gray-300 text-base font-normal leading-normal mt-1"
+              >
+                إدخال تقنية الليزر لطب الأسنان كأول عيادة في المنطقة.
+              </p>
+            </div>
+          </div>
+          <!-- Timeline Item -->
+          <div class="flex items-start">
+            <div
+              class="absolute right-[-7px] top-1.5 h-4 w-4 rounded-full bg-primary border-4 border-background-light dark:border-background-dark"
+            ></div>
+            <div class="pr-8">
+              <p class="font-bold text-accent-green dark:text-green-400">
+                2023
+              </p>
+              <p
+                class="text-[#111418] dark:text-gray-300 text-base font-normal leading-normal mt-1"
+              >
+                توسعة وتطوير الفرع الرئيسي ليشمل كافة تخصصات طب الأسنان.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Meet Our Team Section -->
+      <h2
+        class="text-[#111418] dark:text-white tracking-light text-2xl font-bold leading-tight px-4 text-right pb-3 pt-8 flex justify-center"
+      >
+        تعرف على فريقنا
+      </h2>
+      <div class="flex justify-center gap-8 my-10">
+        <!-- Team Member Card 1 -->
+        <div
+          class="flex-shrink-0 w-40 text-center bg-white dark:bg-gray-800 rounded-lg shadow-[0_0_4px_rgba(0,0,0,0.1)] p-4"
+        >
+          <img
+            class="w-24 h-24 rounded-full mx-auto object-cover"
+            data-alt="Portrait of a female dentist smiling"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcsbMHAPOOtJiRo7TPrObZDnhIfejUUUg_pZCTE3HkQ1T-ynZit0SFVw6--QKjoZyLpgQGvAfXzRHpu8T8ncukw9qEXrFmURt0C81O0peXjqcKGVxMp6mFwp-HF8RtPF8csoMDTXGycpEWMOAg5IKeC0ekl3yafuLToeZ_cqiB6bBg35xQ5XRJmfPMM0djJin3JSLy5ztjEbJMuKpQ7rqYq5Lz3oNpGqZo-jnciP5qBLvcRFdpoTe1dUBh7tbym6yNHnAZX4bH6c8"
+          />
+          <p class="text-[#111418] dark:text-white font-bold mt-3">
+            د. فاطمة الأحمدي
+          </p>
+          <p class="text-primary dark:text-blue-400 text-sm">تقويم الأسنان</p>
+        </div>
+        <!-- Team Member Card 2 -->
+        <div
+          class="flex-shrink-0 w-40 text-center bg-white dark:bg-gray-800 rounded-lg shadow-[0_0_4px_rgba(0,0,0,0.1)] p-4"
+        >
+          <img
+            class="w-24 h-24 rounded-full mx-auto object-cover"
+            data-alt="Portrait of a male dentist smiling"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKwhCE1uPmJsbWT6zn80_v7a7ZQwwP2kMkF6PMu-QPP1O81wMlAMzz9xARlq4wc3sNEOesGJ9_td2PF8zUXroJb-vK4ebB7OHprL47kJo929l5wurfOjRJBuwWvYTD7L5yUOn4y-uBi-WzcrdazLNMJadqHk63Y_lsEkf_hRwIgw3sfC5h3GfpMfW5C2hZk3G5bHBH_8crhwya0kxi3EvEoQE4CzjBxM2-u-3fknHOugh-SY2MBRdWfUdso58La3J1oGlZXllWIHg"
+          />
+          <p class="text-[#111418] dark:text-white font-bold mt-3">
+            د. خالد الغامدي
+          </p>
+          <p class="text-primary dark:text-blue-400 text-sm">زراعة الأسنان</p>
+        </div>
+        <!-- Team Member Card 3 -->
+        <div
+          class="flex-shrink-0 w-40 text-center bg-white dark:bg-gray-800 rounded-lg shadow-[0_0_4px_rgba(0,0,0,0.1)] p-4"
+        >
+          <img
+            class="w-24 h-24 rounded-full mx-auto object-cover"
+            data-alt="Portrait of a friendly female doctor"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0ossd7DymkCN-buVTwbyGWPBFQlJ3_DejdWO5vs82JhwxU4VZTugCganc-BD7d-3LCVtW-smM-4lCvqkNjAhZEl_Nhd__Oe9WcNZ0X92X62TIxaxCiKlextJJRSySwPC_o48dO7XXJGgjS7msmvA1ymrJnR1TAJ7TiP1DHgT475ouExqK3yWGktZmPanmmF2tHWjDtt7_T6xRA9gzsIRAi-1-7OfkNkJ82wV7bRpHjM0C6qDj8vobVAavsgFJC-gcId9kuz6MjAA"
+          />
+          <p class="text-[#111418] dark:text-white font-bold mt-3">
+            د. سارة محمد
+          </p>
+          <p class="text-primary dark:text-blue-400 text-sm">
+            طب أسنان الأطفال
+          </p>
+        </div>
+      </div>
+      <!-- CTA Button -->
+      <div
+        class="px-4 pt-8 pb-6 sticky bottom-0 bg-background-light dark:bg-background-dark flex justify-center"
+      >
+        <a
+          href="./book/branch.html"
+          class="w-full md:w-96 bg-primary text-white font-bold py-4 px-4 rounded-lg shadow-lg text-center"
+        >
+          احجز موعدك الآن
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
