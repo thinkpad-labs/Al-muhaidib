@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Doctor Profile Page - Semantic</title>
+    <title>Doctor Directory - Branches</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
@@ -71,264 +71,550 @@
         <h1
           class="text-lg font-bold text-zinc-900 dark:text-zinc-100 flex-1 text-center"
         >
-          صفحة الطبيب
+          فريق الأطباء
         </h1>
         <div class="flex-1" aria-hidden="true"></div>
       </header>
 
-      <main class="flex flex-col gap-6 p-4">
-        <section
-          aria-labelledby="doctor-name"
-          class="flex w-full flex-col items-center gap-4 rounded-xl bg-white dark:bg-zinc-800 p-6 shadow-sm"
-        >
-          <div
-            class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-28"
-            role="img"
-            aria-label="Professional headshot of Doctor Ahmed Abdullah"
-            style="
-              background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBtsfewuTezgF-HMHQY9eNoz_JhSH-Mdb9GDg_t9rjL7csba3GCK_Kt237FnmFY_I1mMu0O8gpTbJcGqHvvFueRDBaaFTLvRsKHDnvaUvAePwZ3EUmHha0OKkEiY3jto9FMQKgOmrWdD-M2rhUXv7ytJlia5YOBggWxip2IB9rUMrZJvYJiDCZfi-06xUg9g9xIReNJoQEKHIjMkOo6FHmCZgrY08c0LVznc75flCA58KZ8maJT5phsY-Dp2Fo69xICY5vrlSVhvS8');
-            "
-          ></div>
-          <div class="flex flex-col items-center justify-center gap-1">
-            <h2
-              id="doctor-name"
-              class="text-zinc-900 dark:text-zinc-100 text-2xl font-bold leading-tight tracking-[-0.015em] text-center"
+      <main class="flex flex-col gap-8 p-4">
+        <section aria-labelledby="branch-riyadh" class="flex flex-col gap-4">
+          <div class="flex items-center gap-2 px-2">
+            <span class="material-symbols-outlined text-primary"
+              >location_on</span
             >
-              د. أحمد عبدالله
-            </h2>
-            <p
-              class="text-zinc-600 dark:text-zinc-400 text-base font-normal leading-normal text-center"
+            <h3
+              id="branch-riyadh"
+              class="text-zinc-900 dark:text-zinc-100 text-xl font-bold"
             >
-              أخصائي تقويم الأسنان
-            </p>
-            <p
-              class="text-primary text-sm font-medium leading-normal text-center"
+              فرع العزيزية - الامام البخاري
+            </h3>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <section
+              aria-labelledby="doctor-name"
+              class="flex w-full flex-col items-center gap-4 rounded-xl bg-white dark:bg-zinc-800 p-6 shadow-sm border border-primary/20"
             >
-              15+ سنة خبرة
-            </p>
+              <img
+                src="bukhari doctors/WhatsApp Image 2025-12-11 at 11.29.17 PM (1).jpeg"
+                alt="Professional headshot of Doctor Ahmed Abdullah"
+                class="object-cover object-center rounded-full size-28"
+              />
+              <div class="flex flex-col items-center justify-center gap-1">
+                <h2
+                  id="doctor-name"
+                  class="text-zinc-900 dark:text-zinc-100 text-2xl font-bold leading-tight tracking-[-0.015em] text-center"
+                >
+                  د. أحمد عبدالله
+                </h2>
+                <p
+                  class="text-zinc-600 dark:text-zinc-400 text-base font-normal leading-normal text-center"
+                >
+                  استشاري تقويم الأسنان
+                </p>
+                <p
+                  class="text-primary text-sm font-medium leading-normal text-center"
+                >
+                  15+ سنة خبرة
+                </p>
+              </div>
+
+              <div class="w-full h-px bg-zinc-100 dark:bg-zinc-700 my-2"></div>
+
+              <section
+                aria-labelledby="bio-heading"
+                class="flex flex-col gap-2 w-full"
+              >
+                <h3
+                  id="bio-heading"
+                  class="text-zinc-900 dark:text-zinc-100 text-lg font-bold leading-tight tracking-[-0.015em]"
+                >
+                  النبذة التعريفية
+                </h3>
+                <p
+                  class="text-zinc-600 dark:text-zinc-300 text-sm font-normal leading-relaxed"
+                >
+                  الدكتور أحمد هو طبيب أسنان متخصص في تقويم الأسنان يتمتع بخبرة
+                  واسعة في تقديم رعاية عالية الجودة للمرضى. تخرج من جامعة الملك
+                  سعود مع مرتبة الشرف.
+                </p>
+              </section>
+            </section>
+            <section
+              aria-labelledby="doctor-name"
+              class="flex w-full flex-col items-center gap-4 rounded-xl bg-white dark:bg-zinc-800 p-6 shadow-sm border border-primary/20"
+            >
+              <img
+                src="bukhari doctors/WhatsApp Image 2025-12-11 at 11.29.18 PM (1).jpeg"
+                alt="Professional headshot of Doctor Ahmed Abdullah"
+                class="object-cover object-center rounded-full size-28"
+              />
+              <div class="flex flex-col items-center justify-center gap-1">
+                <h2
+                  id="doctor-name"
+                  class="text-zinc-900 dark:text-zinc-100 text-2xl font-bold leading-tight tracking-[-0.015em] text-center"
+                >
+                  د. أحمد عبدالله
+                </h2>
+                <p
+                  class="text-zinc-600 dark:text-zinc-400 text-base font-normal leading-normal text-center"
+                >
+                  استشاري تقويم الأسنان
+                </p>
+                <p
+                  class="text-primary text-sm font-medium leading-normal text-center"
+                >
+                  15+ سنة خبرة
+                </p>
+              </div>
+
+              <div class="w-full h-px bg-zinc-100 dark:bg-zinc-700 my-2"></div>
+
+              <section
+                aria-labelledby="bio-heading"
+                class="flex flex-col gap-2 w-full"
+              >
+                <h3
+                  id="bio-heading"
+                  class="text-zinc-900 dark:text-zinc-100 text-lg font-bold leading-tight tracking-[-0.015em]"
+                >
+                  النبذة التعريفية
+                </h3>
+                <p
+                  class="text-zinc-600 dark:text-zinc-300 text-sm font-normal leading-relaxed"
+                >
+                  الدكتور أحمد هو طبيب أسنان متخصص في تقويم الأسنان يتمتع بخبرة
+                  واسعة في تقديم رعاية عالية الجودة للمرضى. تخرج من جامعة الملك
+                  سعود مع مرتبة الشرف.
+                </p>
+              </section>
+            </section>
+            <section
+              aria-labelledby="doctor-name"
+              class="flex w-full flex-col items-center gap-4 rounded-xl bg-white dark:bg-zinc-800 p-6 shadow-sm border border-primary/20"
+            >
+              <img
+                src="bukhari doctors/WhatsApp Image 2025-12-11 at 11.29.19 PM.jpeg"
+                alt="Professional headshot of Doctor Ahmed Abdullah"
+                class="object-cover object-center rounded-full size-28"
+              />
+              <div class="flex flex-col items-center justify-center gap-1">
+                <h2
+                  id="doctor-name"
+                  class="text-zinc-900 dark:text-zinc-100 text-2xl font-bold leading-tight tracking-[-0.015em] text-center"
+                >
+                  د. أحمد عبدالله
+                </h2>
+                <p
+                  class="text-zinc-600 dark:text-zinc-400 text-base font-normal leading-normal text-center"
+                >
+                  استشاري تقويم الأسنان
+                </p>
+                <p
+                  class="text-primary text-sm font-medium leading-normal text-center"
+                >
+                  15+ سنة خبرة
+                </p>
+              </div>
+
+              <div class="w-full h-px bg-zinc-100 dark:bg-zinc-700 my-2"></div>
+
+              <section
+                aria-labelledby="bio-heading"
+                class="flex flex-col gap-2 w-full"
+              >
+                <h3
+                  id="bio-heading"
+                  class="text-zinc-900 dark:text-zinc-100 text-lg font-bold leading-tight tracking-[-0.015em]"
+                >
+                  النبذة التعريفية
+                </h3>
+                <p
+                  class="text-zinc-600 dark:text-zinc-300 text-sm font-normal leading-relaxed"
+                >
+                  الدكتور أحمد هو طبيب أسنان متخصص في تقويم الأسنان يتمتع بخبرة
+                  واسعة في تقديم رعاية عالية الجودة للمرضى. تخرج من جامعة الملك
+                  سعود مع مرتبة الشرف.
+                </p>
+              </section>
+            </section>
+            <section
+              aria-labelledby="doctor-name"
+              class="flex w-full flex-col items-center gap-4 rounded-xl bg-white dark:bg-zinc-800 p-6 shadow-sm border border-primary/20"
+            >
+              <img
+                src="bukhari doctors/WhatsApp Image 2025-12-11 at 11.29.18 PM.jpeg"
+                alt="Professional headshot of Doctor Ahmed Abdullah"
+                class="object-cover object-center rounded-full size-28"
+              />
+              <div class="flex flex-col items-center justify-center gap-1">
+                <h2
+                  id="doctor-name"
+                  class="text-zinc-900 dark:text-zinc-100 text-2xl font-bold leading-tight tracking-[-0.015em] text-center"
+                >
+                  د. أحمد عبدالله
+                </h2>
+                <p
+                  class="text-zinc-600 dark:text-zinc-400 text-base font-normal leading-normal text-center"
+                >
+                  استشاري تقويم الأسنان
+                </p>
+                <p
+                  class="text-primary text-sm font-medium leading-normal text-center"
+                >
+                  15+ سنة خبرة
+                </p>
+              </div>
+
+              <div class="w-full h-px bg-zinc-100 dark:bg-zinc-700 my-2"></div>
+
+              <section
+                aria-labelledby="bio-heading"
+                class="flex flex-col gap-2 w-full"
+              >
+                <h3
+                  id="bio-heading"
+                  class="text-zinc-900 dark:text-zinc-100 text-lg font-bold leading-tight tracking-[-0.015em]"
+                >
+                  النبذة التعريفية
+                </h3>
+                <p
+                  class="text-zinc-600 dark:text-zinc-300 text-sm font-normal leading-relaxed"
+                >
+                  الدكتور أحمد هو طبيب أسنان متخصص في تقويم الأسنان يتمتع بخبرة
+                  واسعة في تقديم رعاية عالية الجودة للمرضى. تخرج من جامعة الملك
+                  سعود مع مرتبة الشرف.
+                </p>
+              </section>
+            </section>
+            <section
+              aria-labelledby="doctor-name"
+              class="flex w-full flex-col items-center gap-4 rounded-xl bg-white dark:bg-zinc-800 p-6 shadow-sm border border-primary/20"
+            >
+              <img
+                src="bukhari doctors/WhatsApp Image 2025-12-11 at 11.29.17 PM.jpeg"
+                alt="Professional headshot of Doctor Ahmed Abdullah"
+                class="object-cover object-center rounded-full size-28"
+              />
+              <div class="flex flex-col items-center justify-center gap-1">
+                <h2
+                  id="doctor-name"
+                  class="text-zinc-900 dark:text-zinc-100 text-2xl font-bold leading-tight tracking-[-0.015em] text-center"
+                >
+                  د. أحمد عبدالله
+                </h2>
+                <p
+                  class="text-zinc-600 dark:text-zinc-400 text-base font-normal leading-normal text-center"
+                >
+                  استشاري تقويم الأسنان
+                </p>
+                <p
+                  class="text-primary text-sm font-medium leading-normal text-center"
+                >
+                  15+ سنة خبرة
+                </p>
+              </div>
+
+              <div class="w-full h-px bg-zinc-100 dark:bg-zinc-700 my-2"></div>
+
+              <section
+                aria-labelledby="bio-heading"
+                class="flex flex-col gap-2 w-full"
+              >
+                <h3
+                  id="bio-heading"
+                  class="text-zinc-900 dark:text-zinc-100 text-lg font-bold leading-tight tracking-[-0.015em]"
+                >
+                  النبذة التعريفية
+                </h3>
+                <p
+                  class="text-zinc-600 dark:text-zinc-300 text-sm font-normal leading-relaxed"
+                >
+                  الدكتور أحمد هو طبيب أسنان متخصص في تقويم الأسنان يتمتع بخبرة
+                  واسعة في تقديم رعاية عالية الجودة للمرضى. تخرج من جامعة الملك
+                  سعود مع مرتبة الشرف.
+                </p>
+              </section>
+            </section>
+            <section
+              aria-labelledby="doctor-name"
+              class="flex w-full flex-col items-center gap-4 rounded-xl bg-white dark:bg-zinc-800 p-6 shadow-sm border border-primary/20"
+            >
+              <img
+                src="bukhari doctors/WhatsApp Image 2025-12-11 at 11.29.18 PM (2).jpeg"
+                alt="Professional headshot of Doctor Ahmed Abdullah"
+                class="object-cover object-center rounded-full size-28"
+              />
+              <div class="flex flex-col items-center justify-center gap-1">
+                <h2
+                  id="doctor-name"
+                  class="text-zinc-900 dark:text-zinc-100 text-2xl font-bold leading-tight tracking-[-0.015em] text-center"
+                >
+                  د. أحمد عبدالله
+                </h2>
+                <p
+                  class="text-zinc-600 dark:text-zinc-400 text-base font-normal leading-normal text-center"
+                >
+                  استشاري تقويم الأسنان
+                </p>
+                <p
+                  class="text-primary text-sm font-medium leading-normal text-center"
+                >
+                  15+ سنة خبرة
+                </p>
+              </div>
+
+              <div class="w-full h-px bg-zinc-100 dark:bg-zinc-700 my-2"></div>
+
+              <section
+                aria-labelledby="bio-heading"
+                class="flex flex-col gap-2 w-full"
+              >
+                <h3
+                  id="bio-heading"
+                  class="text-zinc-900 dark:text-zinc-100 text-lg font-bold leading-tight tracking-[-0.015em]"
+                >
+                  النبذة التعريفية
+                </h3>
+                <p
+                  class="text-zinc-600 dark:text-zinc-300 text-sm font-normal leading-relaxed"
+                >
+                  الدكتور أحمد هو طبيب أسنان متخصص في تقويم الأسنان يتمتع بخبرة
+                  واسعة في تقديم رعاية عالية الجودة للمرضى. تخرج من جامعة الملك
+                  سعود مع مرتبة الشرف.
+                </p>
+              </section>
+            </section>
+            <section
+              aria-labelledby="doctor-name"
+              class="flex w-full flex-col items-center gap-4 rounded-xl bg-white dark:bg-zinc-800 p-6 shadow-sm border border-primary/20"
+            >
+              <img
+                src="bukhari doctors/WhatsApp Image 2025-12-11 at 11.29.19 PM (1).jpeg"
+                alt="Professional headshot of Doctor Ahmed Abdullah"
+                class="object-cover object-center rounded-full size-28"
+              />
+              <div class="flex flex-col items-center justify-center gap-1">
+                <h2
+                  id="doctor-name"
+                  class="text-zinc-900 dark:text-zinc-100 text-2xl font-bold leading-tight tracking-[-0.015em] text-center"
+                >
+                  د. أحمد عبدالله
+                </h2>
+                <p
+                  class="text-zinc-600 dark:text-zinc-400 text-base font-normal leading-normal text-center"
+                >
+                  استشاري تقويم الأسنان
+                </p>
+                <p
+                  class="text-primary text-sm font-medium leading-normal text-center"
+                >
+                  15+ سنة خبرة
+                </p>
+              </div>
+
+              <div class="w-full h-px bg-zinc-100 dark:bg-zinc-700 my-2"></div>
+
+              <section
+                aria-labelledby="bio-heading"
+                class="flex flex-col gap-2 w-full"
+              >
+                <h3
+                  id="bio-heading"
+                  class="text-zinc-900 dark:text-zinc-100 text-lg font-bold leading-tight tracking-[-0.015em]"
+                >
+                  النبذة التعريفية
+                </h3>
+                <p
+                  class="text-zinc-600 dark:text-zinc-300 text-sm font-normal leading-relaxed"
+                >
+                  الدكتور أحمد هو طبيب أسنان متخصص في تقويم الأسنان يتمتع بخبرة
+                  واسعة في تقديم رعاية عالية الجودة للمرضى. تخرج من جامعة الملك
+                  سعود مع مرتبة الشرف.
+                </p>
+              </section>
+            </section>
           </div>
         </section>
 
-        <section
-          aria-labelledby="bio-heading"
-          class="flex flex-col gap-2 rounded-xl bg-white dark:bg-zinc-800 p-4 shadow-sm"
-        >
-          <h3
-            id="bio-heading"
-            class="text-zinc-900 dark:text-zinc-100 text-lg font-bold leading-tight tracking-[-0.015em]"
-          >
-            النبذة التعريفية
-          </h3>
-          <p
-            class="text-zinc-600 dark:text-zinc-300 text-base font-normal leading-relaxed"
-          >
-            الدكتور أحمد هو طبيب أسنان متخصص في تقويم الأسنان يتمتع بخبرة واسعة
-            في تقديم رعاية عالية الجودة للمرضى. تخرج من جامعة الملك سعود مع
-            مرتبة الشرف، وأكمل تخصصه في تقويم الأسنان في الولايات المتحدة. يلتزم
-            بتقديم أحدث العلاجات لتحقيق أفضل النتائج الجمالية والوظيفية لمرضاه.
-          </p>
-          <a class="text-primary font-bold text-sm mt-1 inline-block" href="#"
-            >اقرأ المزيد</a
-          >
+        <section aria-labelledby="branch-jeddah" class="flex flex-col gap-4">
+          <div class="flex items-center gap-2 px-2">
+            <span class="material-symbols-outlined text-primary"
+              >location_on</span
+            >
+            <h3
+              id="branch-jeddah"
+              class="text-zinc-900 dark:text-zinc-100 text-xl font-bold"
+            >
+              فرع الدائري
+            </h3>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <section
+              aria-labelledby="doctor-name"
+              class="flex w-full flex-col items-center gap-4 rounded-xl bg-white dark:bg-zinc-800 p-6 shadow-sm border border-primary/20"
+            >
+              <img
+                src="daeri doctors/WhatsApp Image 2025-12-11 at 11.34.31 PM.jpeg"
+                alt="Professional headshot of Doctor Ahmed Abdullah"
+                class="object-cover object-center rounded-full size-28"
+              />
+              <div class="flex flex-col items-center justify-center gap-1">
+                <h2
+                  id="doctor-name"
+                  class="text-zinc-900 dark:text-zinc-100 text-2xl font-bold leading-tight tracking-[-0.015em] text-center"
+                >
+                  د. أحمد عبدالله
+                </h2>
+                <p
+                  class="text-zinc-600 dark:text-zinc-400 text-base font-normal leading-normal text-center"
+                >
+                  استشاري تقويم الأسنان
+                </p>
+                <p
+                  class="text-primary text-sm font-medium leading-normal text-center"
+                >
+                  15+ سنة خبرة
+                </p>
+              </div>
+
+              <div class="w-full h-px bg-zinc-100 dark:bg-zinc-700 my-2"></div>
+
+              <section
+                aria-labelledby="bio-heading"
+                class="flex flex-col gap-2 w-full"
+              >
+                <h3
+                  id="bio-heading"
+                  class="text-zinc-900 dark:text-zinc-100 text-lg font-bold leading-tight tracking-[-0.015em]"
+                >
+                  النبذة التعريفية
+                </h3>
+                <p
+                  class="text-zinc-600 dark:text-zinc-300 text-sm font-normal leading-relaxed"
+                >
+                  الدكتور أحمد هو طبيب أسنان متخصص في تقويم الأسنان يتمتع بخبرة
+                  واسعة في تقديم رعاية عالية الجودة للمرضى. تخرج من جامعة الملك
+                  سعود مع مرتبة الشرف.
+                </p>
+              </section>
+            </section>
+            <section
+              aria-labelledby="doctor-name"
+              class="flex w-full flex-col items-center gap-4 rounded-xl bg-white dark:bg-zinc-800 p-6 shadow-sm border border-primary/20"
+            >
+              <img
+                src="daeri doctors/WhatsApp Image 2025-12-11 at 11.34.32 PM.jpeg"
+                alt="Professional headshot of Doctor Ahmed Abdullah"
+                class="object-cover object-center rounded-full size-28"
+              />
+              <div class="flex flex-col items-center justify-center gap-1">
+                <h2
+                  id="doctor-name"
+                  class="text-zinc-900 dark:text-zinc-100 text-2xl font-bold leading-tight tracking-[-0.015em] text-center"
+                >
+                  د. أحمد عبدالله
+                </h2>
+                <p
+                  class="text-zinc-600 dark:text-zinc-400 text-base font-normal leading-normal text-center"
+                >
+                  استشاري تقويم الأسنان
+                </p>
+                <p
+                  class="text-primary text-sm font-medium leading-normal text-center"
+                >
+                  15+ سنة خبرة
+                </p>
+              </div>
+
+              <div class="w-full h-px bg-zinc-100 dark:bg-zinc-700 my-2"></div>
+
+              <section
+                aria-labelledby="bio-heading"
+                class="flex flex-col gap-2 w-full"
+              >
+                <h3
+                  id="bio-heading"
+                  class="text-zinc-900 dark:text-zinc-100 text-lg font-bold leading-tight tracking-[-0.015em]"
+                >
+                  النبذة التعريفية
+                </h3>
+                <p
+                  class="text-zinc-600 dark:text-zinc-300 text-sm font-normal leading-relaxed"
+                >
+                  الدكتور أحمد هو طبيب أسنان متخصص في تقويم الأسنان يتمتع بخبرة
+                  واسعة في تقديم رعاية عالية الجودة للمرضى. تخرج من جامعة الملك
+                  سعود مع مرتبة الشرف.
+                </p>
+              </section>
+            </section>
+          </div>
         </section>
 
-        <section aria-labelledby="reviews-heading" class="flex flex-col gap-3">
-          <h3
-            id="reviews-heading"
-            class="text-zinc-900 dark:text-zinc-100 text-lg font-bold leading-tight tracking-[-0.015em] px-1"
-          >
-            تقييمات المرضى
-          </h3>
-          <div
-            class="[-ms-scrollbar-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
-            tabindex="0"
-          >
-            <ul
-              class="flex flex-wrap md:flex-nowrap md:overflow-x-auto w-full items-stretch pr-1 gap-3"
+        <section aria-labelledby="branch-dammam" class="flex flex-col gap-4">
+          <div class="flex items-center gap-2 px-2">
+            <span class="material-symbols-outlined text-primary"
+              >location_on</span
             >
-              <li class="flex-1 shrink-0 min-w-[250px]">
-                <article
-                  class="flex h-full flex-col gap-3 rounded-xl bg-white dark:bg-zinc-800 p-4 shadow-sm"
-                >
-                  <div class="flex items-center gap-3">
-                    <div
-                      class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-12"
-                      role="img"
-                      aria-label="Profile picture of patient Sara Ali"
-                      style="
-                        background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAZLNUxnCejQWIFD2sL_rlRyfbxcpQ1gPb2IivEO53Fgid9L4xnRrVSz_ZtXZxCWDxB_GvXTK_Y4HuaWkyoM5nGsR8mN5_rqNtaxvP3VEBEK8zV_C5zkBud9RF_DEzJOWh7Q5rV4GZYTziUFinGVfIK3DsHDBze32YiWVz4vtDTZtxZBE3saWfutpCjwVy590DURGLMsezwUjao_vPSckYWyk8DECTIPuJ6JiE6CI-Kq8lSUxuoXRDu5WAYomq3KZWPw4u0PORuG_M');
-                      "
-                    ></div>
-                    <div class="flex flex-col">
-                      <p
-                        class="text-zinc-900 dark:text-zinc-100 text-base font-bold"
-                      >
-                        سارة علي
-                      </p>
-                      <div
-                        class="flex text-yellow-400"
-                        role="img"
-                        aria-label="5 من 5 نجوم"
-                      >
-                        <span
-                          class="material-symbols-outlined text-base"
-                          aria-hidden="true"
-                          >star</span
-                        >
-                        <span
-                          class="material-symbols-outlined text-base"
-                          aria-hidden="true"
-                          >star</span
-                        >
-                        <span
-                          class="material-symbols-outlined text-base"
-                          aria-hidden="true"
-                          >star</span
-                        >
-                        <span
-                          class="material-symbols-outlined text-base"
-                          aria-hidden="true"
-                          >star</span
-                        >
-                        <span
-                          class="material-symbols-outlined text-base"
-                          aria-hidden="true"
-                          >star</span
-                        >
-                      </div>
-                    </div>
-                  </div>
-                  <blockquote
-                    class="text-zinc-600 dark:text-zinc-300 text-sm font-normal leading-normal"
-                  >
-                    "تجربة ممتازة! الدكتور محترف جداً وصبور، وشرح لي كل خطوات
-                    العلاج بالتفصيل."
-                  </blockquote>
-                </article>
-              </li>
+            <h3
+              id="branch-dammam"
+              class="text-zinc-900 dark:text-zinc-100 text-xl font-bold"
+            >
+              فرع الممشى
+            </h3>
+          </div>
 
-              <li class="flex-1 shrink-0 min-w-[250px]">
-                <article
-                  class="flex h-full flex-col gap-3 rounded-xl bg-white dark:bg-zinc-800 p-4 shadow-sm"
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <section
+              aria-labelledby="doctor-name"
+              class="flex w-full flex-col items-center gap-4 rounded-xl bg-white dark:bg-zinc-800 p-6 shadow-sm border border-primary/20"
+            >
+              <img
+                src="mamsha doctors/image.png"
+                alt="Professional headshot of Doctor Ahmed Abdullah"
+                class="object-cover object-center rounded-full size-28"
+              />
+              <div class="flex flex-col items-center justify-center gap-1">
+                <h2
+                  id="doctor-name"
+                  class="text-zinc-900 dark:text-zinc-100 text-2xl font-bold leading-tight tracking-[-0.015em] text-center"
                 >
-                  <div class="flex items-center gap-3">
-                    <div
-                      class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-12"
-                      role="img"
-                      aria-label="Profile picture of patient Mohammed Khalid"
-                      style="
-                        background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCDnSSC17PJUIpBtJ0h1XVX3GRS1K4-2LJ9fEdsV35bJI4hwIqvzXT6_IyIkFj7xQ7fmTbmeVz9d2kkd5qqqaIoUxL-Z4c7UpWVjkj3GPy7FW41J3xx_fYbQ866zJt_Z8HdFHa36kdrLxbisC5Xz6XxeLtfuKJoqWKa5x5hgdY9900ZG2zaFLBRUTSgb0FoIzNMUG2BAkMOrOr4yW3z3IkO8Hd28810k-mZfJw1qMJ-wHeFYpVTWxolVA_A2X3jgBW34_Z8sYrVYRE');
-                      "
-                    ></div>
-                    <div class="flex flex-col">
-                      <p
-                        class="text-zinc-900 dark:text-zinc-100 text-base font-bold"
-                      >
-                        محمد خالد
-                      </p>
-                      <div
-                        class="flex text-yellow-400"
-                        role="img"
-                        aria-label="5 من 5 نجوم"
-                      >
-                        <span
-                          class="material-symbols-outlined text-base"
-                          aria-hidden="true"
-                          >star</span
-                        >
-                        <span
-                          class="material-symbols-outlined text-base"
-                          aria-hidden="true"
-                          >star</span
-                        >
-                        <span
-                          class="material-symbols-outlined text-base"
-                          aria-hidden="true"
-                          >star</span
-                        >
-                        <span
-                          class="material-symbols-outlined text-base"
-                          aria-hidden="true"
-                          >star</span
-                        >
-                        <span
-                          class="material-symbols-outlined text-base"
-                          aria-hidden="true"
-                          >star</span
-                        >
-                      </div>
-                    </div>
-                  </div>
-                  <blockquote
-                    class="text-zinc-600 dark:text-zinc-300 text-sm font-normal leading-normal"
-                  >
-                    "أفضل طبيب تقويم أسنان في المدينة، النتائج كانت مذهلة. أنصح
-                    به بشدة."
-                  </blockquote>
-                </article>
-              </li>
+                  د. أحمد عبدالله
+                </h2>
+                <p
+                  class="text-zinc-600 dark:text-zinc-400 text-base font-normal leading-normal text-center"
+                >
+                  استشاري تقويم الأسنان
+                </p>
+                <p
+                  class="text-primary text-sm font-medium leading-normal text-center"
+                >
+                  15+ سنة خبرة
+                </p>
+              </div>
 
-              <li class="flex-1 shrink-0 min-w-[250px]">
-                <article
-                  class="flex h-full flex-col gap-3 rounded-xl bg-white dark:bg-zinc-800 p-4 shadow-sm"
+              <div class="w-full h-px bg-zinc-100 dark:bg-zinc-700 my-2"></div>
+
+              <section
+                aria-labelledby="bio-heading"
+                class="flex flex-col gap-2 w-full"
+              >
+                <h3
+                  id="bio-heading"
+                  class="text-zinc-900 dark:text-zinc-100 text-lg font-bold leading-tight tracking-[-0.015em]"
                 >
-                  <div class="flex items-center gap-3">
-                    <div
-                      class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-12"
-                      role="img"
-                      aria-label="Profile picture of patient Fatima Hussein"
-                      style="
-                        background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDBYwswcharxrQn-_31DYVYUF3QU709gYIkdkdbJxcA9-YPsCjNy56LNHiQQ8oNF7RvfHEEy8zGf4FgxWgZCDOaU5YkemiK_9a-3WoUvcTbPViJCHlow91kTuc4uX85wIlRVCwF3HURo1uONpTCOO-OYPoa2v67rMjFynatDbXUlWrn9L32b4u2s5_vz_56m_mRRJdLHpLMWE775Fqi40PWxmtVr7QUZP0JdD_lseDgmeG2jrKTFKQYX5bVON-6a6-asFEm3SIRRoU');
-                      "
-                    ></div>
-                    <div class="flex flex-col">
-                      <p
-                        class="text-zinc-900 dark:text-zinc-100 text-base font-bold"
-                      >
-                        فاطمة حسين
-                      </p>
-                      <div
-                        class="flex text-yellow-400"
-                        role="img"
-                        aria-label="4.5 من 5 نجوم"
-                      >
-                        <span
-                          class="material-symbols-outlined text-base"
-                          aria-hidden="true"
-                          >star</span
-                        >
-                        <span
-                          class="material-symbols-outlined text-base"
-                          aria-hidden="true"
-                          >star</span
-                        >
-                        <span
-                          class="material-symbols-outlined text-base"
-                          aria-hidden="true"
-                          >star</span
-                        >
-                        <span
-                          class="material-symbols-outlined text-base"
-                          aria-hidden="true"
-                          >star</span
-                        >
-                        <span
-                          class="material-symbols-outlined text-base"
-                          aria-hidden="true"
-                          >star_half</span
-                        >
-                      </div>
-                    </div>
-                  </div>
-                  <blockquote
-                    class="text-zinc-600 dark:text-zinc-300 text-sm font-normal leading-normal"
-                  >
-                    "العيادة نظيفة والفريق متعاون. الدكتور أحمد يمتلك يداً خفيفة
-                    وعملاً متقناً."
-                  </blockquote>
-                </article>
-              </li>
-            </ul>
+                  النبذة التعريفية
+                </h3>
+                <p
+                  class="text-zinc-600 dark:text-zinc-300 text-sm font-normal leading-relaxed"
+                >
+                  الدكتور أحمد هو طبيب أسنان متخصص في تقويم الأسنان يتمتع بخبرة
+                  واسعة في تقديم رعاية عالية الجودة للمرضى. تخرج من جامعة الملك
+                  سعود مع مرتبة الشرف.
+                </p>
+              </section>
+            </section>
           </div>
         </section>
       </main>
@@ -341,7 +627,7 @@
             href="./book/branch.html"
             class="flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-14 px-4 bg-primary text-white text-lg font-bold leading-normal tracking-[0.015em] active:scale-95 transition-transform duration-100 hover:bg-blue-600 shadow-lg"
           >
-            <span class="truncate">احجز موعد مع الدكتور</span>
+            <span class="truncate">احجز موعد الآن</span>
           </a>
         </div>
       </footer>
